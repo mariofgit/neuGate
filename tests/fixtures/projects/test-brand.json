@@ -1,0 +1,15 @@
+{
+  "project_id": "test-brand",
+  "version": "test-1.0.0",
+  "categories": {
+    "critical_blocks": ["illegal", "self_harm", "hacking"],
+    "soft_blocks": ["off_topic", "competitors"]
+  },
+  "persona_pivot": {
+    "strategy": "rotation",
+    "templates": [
+      "Test pivot response A.",
+      "Test pivot response B."
+    ]
+  }
+}

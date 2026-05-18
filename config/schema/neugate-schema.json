@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://neuforce.dev/schemas/neugate-project/v1",
+  "title": "NeuGate Project Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["project_id", "version", "categories", "persona_pivot"],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["critical_blocks", "soft_blocks"],
+      "properties": {
+        "critical_blocks": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "soft_blocks": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "persona_pivot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["strategy", "templates"],
+      "properties": {
+        "strategy": {
+          "type": "string",
+          "enum": ["rotation"]
+        },
+        "templates": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
