@@ -1,5 +1,7 @@
 # NeuGate
 
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/be4fbca5-bef2-4afe-b5be-0de3e5dc0a4c" />
+
 Semantic filter proxy: classifies user messages **before** embeddings, RAG, or tools in the consumer backend. Returns `proceed` or `short_circuit` with an optional pivot message.
 
 ## Documentation
