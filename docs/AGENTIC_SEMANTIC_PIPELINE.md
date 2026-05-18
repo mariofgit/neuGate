@@ -1,5 +1,7 @@
 # NeuGate — Hybrid pipeline: local agentic security + Red Team (LLM)
 
+See also: [DESIGN.md](DESIGN.md) (index) · [PRD.md](PRD.md) · [INTEGRATION.md](INTEGRATION.md)
+
 Architecture specification for a **in-RAM semantic filter** (&lt;20 ms target locally) **before** the LLM classifier, with no hot-path external embedding API calls.
 
 ## Principle: NeuGate is 100% agnostic

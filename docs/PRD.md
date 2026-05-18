@@ -98,6 +98,7 @@ Jamie guardrails PRD/plan: `jamie-oliver-ai/docs/guardrails/`.
 
 ## 11. Related docs
 
-- [AGENTIC_SEMANTIC_PIPELINE.md](AGENTIC_SEMANTIC_PIPELINE.md)
-- [INTEGRATION.md](INTEGRATION.md)
-- [README.md](../README.md)
+- [DESIGN.md](DESIGN.md) — documentation index
+- [AGENTIC_SEMANTIC_PIPELINE.md](AGENTIC_SEMANTIC_PIPELINE.md) — technical architecture
+- [INTEGRATION.md](INTEGRATION.md) — consumer integration guide
+- [README.md](../README.md) — run, deploy, test

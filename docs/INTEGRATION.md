@@ -1,5 +1,7 @@
 # NeuGate — Integration guide
 
+See also: [DESIGN.md](DESIGN.md) (index) · [PRD.md](PRD.md) · [AGENTIC_SEMANTIC_PIPELINE.md](AGENTIC_SEMANTIC_PIPELINE.md)
+
 Internal neuForce microservice to classify user messages **before** embeddings, RAG, or tools.
 
 Example base URL: `https://neugate.internal.neuforce.dev`
