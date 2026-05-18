@@ -1,16 +1,51 @@
+# --- Secrets & local env (never commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
 __pycache__/
 *.py[cod]
 *$py.class
 .Python
-.venv/
-venv/
-.env
-.env.local
 *.egg-info/
+.eggs/
 dist/
 build/
+pip-wheel-metadata/
+*.egg
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+
+# --- Test & type tools ---
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
+.coverage.*
 htmlcov/
+.tox/
+.hypothesis/
+
+# --- Logs & runtime ---
+*.log
+logs/
+
+# --- OS & editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- ML / agentic local artifacts (rebuild with scripts/seed_vector_db.py) ---
+.cache/
+.huggingface/
+sentence_transformers/
+models/
+# Uncomment to stop versioning generated FAISS artifacts:
+# config/agentic/*.index
